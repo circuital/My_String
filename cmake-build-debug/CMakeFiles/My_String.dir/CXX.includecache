@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/elvirag/src/private/My_String/include/my_string.h
+cstring
+-
+iostream
+-
+
+/Users/elvirag/src/private/My_String/src/main.cpp
+../include/my_string.h
+/Users/elvirag/src/private/My_String/include/my_string.h
+
+/Users/elvirag/src/private/My_String/src/my_string.cpp
+../include/my_string.h
+/Users/elvirag/src/private/My_String/include/my_string.h
+
